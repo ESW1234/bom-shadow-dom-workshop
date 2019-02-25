@@ -15,7 +15,7 @@ class Calendar extends HTMLElement {
         let days = new Date(year,parseInt(month)+1,0).getDate();
         let day = date.getDay();
 
-        console.log("Days?",year, month, days);let z = 0;
+        let z = 0;
 
         shadowRoot.getElementById("MonthTitle").innerHTML = monthDictionary[month];
 

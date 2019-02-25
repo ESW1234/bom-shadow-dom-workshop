@@ -1,0 +1,25 @@
+<h1>
+    Document
+</h1>
+<body>
+<div name="Example Elements">
+    <div>
+        <a href="http://pluralsight.com">Link to Pluralsight</a>
+    </div>
+    <div>
+        <a name="anchor">Just an anchor</a>
+    </div>
+    <form>
+        <input type="text" placeholder="Your name" default="Ralph">
+    </form>
+    <p class="bold">Document is a powerful API.</p>
+    <div id="MyDiv">Div ID: MyDiv</div>
+</div>
+<div name="Document Controls">
+    <button onclick="console.log(document.links)">Log Links</button>
+    <button onclick="console.log(document.anchors)">Log Anchors</button>
+    <button onclick="console.log(document.getElementById('MyDiv'))">Log Element Found by ID</button>
+    <button onclick="console.log(document.querySelector('.bold'))">Log Element Found by Query Selector</button>
+    <button onclick="document.write(`<p>Replaced via JS</p>`)">Rewrite document</button>
+</div>
+</body>

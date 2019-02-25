@@ -1,0 +1,10 @@
+<h1>
+    BOM: Location
+</h1>
+<div id="Location">Location: </div>
+<button onclick="location.href = `http://pluralsight.com`">Update Location</button>
+<button onclick="alert(location.port)">Show Port</button>
+<button onclick="location.search = `a=true&b=42`">Update Query String</button>
+<script>
+    document.getElementById("Location").innerHTML += location;
+</script>

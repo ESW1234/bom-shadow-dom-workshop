@@ -1,0 +1,12 @@
+<h1>
+    Bom Navigator
+</h1>
+<div>
+    Your OS: <span id="OS"></span>
+</div>
+<button onclick="console.log(navigator.cookieEnabled)">Indicate Cookies</button>
+<button onclick="console.log(navigator.language)">Check Language</button>
+<button onclick="console.log(navigator.userAgent)">Output General Information</button>
+<button onclick="navigator.geolocation.getCurrentPosition(position=>console.log(position))">Log Geolocation</button>
+
+<button onclick="document.getElementById('OS').innerHTML = navigator.platform.includes('Win') ? 'Windows' : 'Mac/Linux' ">Determine OS</button>
